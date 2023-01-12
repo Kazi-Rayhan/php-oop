@@ -9,7 +9,6 @@ class Man
     public function __construct($name, $weight, $height)
     {
         $this->name = $name;
-
         $this->weight = $weight;
         $this->height = $height;
     }
@@ -43,6 +42,7 @@ class Man
 
 $rayhan = new Man('Rayhan', 98, 6);
 $bluebird = new Man('Rizul', 60, 5.4);
+$dsa = new Man('Rizul', 60, 5.4);
 
 $bluebird->setAge(12);
 echo $bluebird->age();
