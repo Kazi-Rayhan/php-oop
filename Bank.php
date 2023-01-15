@@ -57,11 +57,12 @@ class Bank
 
 $nabilsAccount = new Bank('Nabil', '12346666');
 
+$nabilsAccount->owner = 'Rayhan';
 
 $nabilsAccount->deposit(110);
 $nabilsAccount->withdraw(120,true);
 
 
-echo $nabilsAccount->getLoan();
+var_dump($nabilsAccount);
 echo '<br>';
 echo $nabilsAccount->getBalance();
