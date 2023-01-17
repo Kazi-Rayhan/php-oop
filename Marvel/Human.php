@@ -77,7 +77,7 @@ class SuperHuman extends Human
     }
 }
 
-class Police extends Human
+class Police extends SuperHuman
 {
     protected $designation;
     protected $gun;
@@ -93,8 +93,36 @@ class Police extends Human
     }
 }
 
-$superMan = new SuperHuman('Flight', 'Clark Kent', 30, 'male', 'journalist');
-$bill = new Human('Clark Kent', 30, 'male', 'journalist');
-$kibria = new Police('Kibria', 30, 'male', 'OC', "g18");
+trait  Childbirth
+{
+    public function owaowa()
+    {
+        return rand(1, 3);
+    }
+}
+trait  chetacheti
+{
+    public function galagali()
+    {
+        return 'random bullshit';
+    }
+}
+class Woman extends Human
+{
+    use Childbirth, chetacheti;
+}
+class Man extends Human
+{
+    use chetacheti;
+}
 
-$kibria->work();
+$sakira = new Woman('Sakira', 38, 'Female', 'singer');
+$Pique = new Man('Pique', 45, 'Male', 'Footballer');
+// echo $sakira->owaowa();
+echo $Pique->galagali();
+
+// $superMan = new SuperHuman('Flight', 'Clark Kent', 30, 'male', 'journalist');
+// $bill = new Human('Clark Kent', 30, 'male', 'journalist');
+// $kibria = new Police('Kibria', 30, 'male', 'OC', "g18");
+
+// $kibria->work();

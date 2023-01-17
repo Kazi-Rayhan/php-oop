@@ -3,6 +3,6 @@
 class Student
 {
     public $name;
-    public $
+    public $asd;
 }
 
