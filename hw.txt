@@ -1,0 +1,22 @@
+
+***koraisi***
+
+//class
+//object
+//attribute
+//methods
+//constructor
+//desturt
+//inheritance
+//access modifier
+//triat
+
+***************
+
+****dekhba****
+
+//abstract class
+//php constatns
+//static properties
+
+***************
